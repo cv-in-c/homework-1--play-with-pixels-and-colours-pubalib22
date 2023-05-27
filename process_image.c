@@ -78,7 +78,7 @@ void shift_image(image im, int c, float v)
         for(int x=0; x<im.w; x++)
         {
             float pix_val= get_pixel(im, x, y, c);
-            pix_val=+ v;
+            pix_val= pix_val + v;
 
             set_pixel(im, x, y, c, pix_val);
         }
